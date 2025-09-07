@@ -28,15 +28,14 @@ export const About = () => {
                 Passionate Developer
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Full-stack developer with strong experience in React.js and
-                Node.js, building scalable MERN applications and deploying
-                production-ready solutions. Skilled in debugging, performance
-                optimization, and integrating frontend with backend services.
+                I’m a full-stack developer who loves turning ideas into real-world applications.
+                With strong experience in the MERN stack (React, Node.js, Express, MongoDB), I enjoy
+                building scalable, user-friendly solutions — from service platforms to AI-powered projects.
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or sharing my knowledge
-                through technical writing and mentoring other developers.
+                I thrive on solving problems, debugging tricky issues, and optimizing performance
+                to deliver smooth user experiences. Beyond coding, I’m always exploring new technologies, 
+                experimenting with side projects, and sharing knowledge with others.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
