@@ -29,8 +29,8 @@ export const About = () => {
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 I’m a full-stack developer who loves turning ideas into real-world applications.
-                With strong experience in the MERN stack (React, Node.js, Express, MongoDB), I enjoy
-                building scalable, user-friendly solutions — from service platforms to AI-powered projects.
+                With strong experience in the MERN stack (React.js,Next.js, Node.js, Express, MongoDB), I enjoy
+                building scalable, user-friendly solutions from service platforms to AI-powered projects.
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 I thrive on solving problems, debugging tricky issues, and optimizing performance
