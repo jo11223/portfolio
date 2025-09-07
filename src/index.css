@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Modern Portfolio Color System */
+    --background: 220 26% 6%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 26% 8%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 26% 8%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 220 15% 95%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 220 15% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 95%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 15%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio-specific tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(262, 83%, 58%), hsl(213, 93%, 67%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220, 26%, 8%), hsl(220, 15%, 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(213, 93%, 67%) 50%, hsl(195, 100%, 70%) 100%);
+    
+    /* Glass morphism */
+    --glass: hsla(220, 26%, 8%, 0.7);
+    --glass-border: hsla(220, 15%, 25%, 0.2);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 10px hsl(262, 83%, 58%, 0.1);
+    --shadow-md: 0 10px 25px hsl(262, 83%, 58%, 0.2);
+    --shadow-lg: 0 25px 50px hsl(262, 83%, 58%, 0.3);
+    --shadow-glow: 0 0 40px hsl(262, 83%, 58%, 0.4);
+
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    background: linear-gradient(135deg, hsl(220, 26%, 6%) 0%, hsl(220, 20%, 8%) 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glass morphism card */
+  .glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Hero button */
+  .btn-hero {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-smooth);
+  }
+
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Project card hover */
+  .project-card {
+    transition: var(--transition-smooth);
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Floating animation */
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    background: var(--gradient-secondary);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-bounce);
+  }
+
+  .skill-badge:hover {
+    background: var(--gradient-primary);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+  }
+}
