@@ -13,9 +13,9 @@ const projects = [
     description:
       "A website showcasing a company’s pure water packaging, highlighting products, processes, and quality standards.",
     image: project1Image,
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["Next js", "Typescript", "Tailwind CSS", "Framer Motion"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/jo11223/Adina-Natural-spring-water",
   },
   {
     id: 2,
@@ -23,9 +23,9 @@ const projects = [
     description:
       "A freelancing marketplace connecting clients and freelancers, allowing job postings, applications, and seamless collaboration.",
     image: project2Image,
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["React.js", "Express", "MongoDB", "Node.js"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/jo11223/Sheqlee",
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const Projects = () => {
                   <div className="flex gap-3">
                     <Button size="sm" className="btn-hero text-white flex-1">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
+                      Live Demo coming soon
                     </Button>
                     <Button
                       size="sm"
