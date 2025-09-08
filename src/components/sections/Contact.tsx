@@ -9,8 +9,8 @@ import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, label: "GitHub", url: "https://github.com/jo11223" },
-  { icon: Linkedin, label: "LinkedIn", url: "#" },
-  { icon: Twitter, label: "Twitter", url: "#" },
+  { icon: Linkedin, label: "LinkedIn", url: "" },
+  { icon: Twitter, label: "Twitter", url: "" },
   { icon: Mail, label: "Email", url: "mailto:johansking959@gmail.com" },
 ];
 
