@@ -100,6 +100,10 @@ export const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="border-primary text-primary hover:bg-primary hover:text-white"
+                      onClick={() =>
+                        project.githubUrl !== "#" &&
+                        window.open(project.githubUrl, "_blank")
+                      }
                     >
                       <Github className="h-4 w-4" />
                     </Button>
