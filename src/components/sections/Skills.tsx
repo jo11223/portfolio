@@ -22,7 +22,7 @@ const skillCategories = [
   {
     title: "Database",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL"],
   },
   // {
   //   title: 'Mobile',
