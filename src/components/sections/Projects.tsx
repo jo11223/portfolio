@@ -33,7 +33,14 @@ const projects = [
     description:
       "A hotel management system for booking rooms, managing reservations, and ensuring smooth guest services.",
     image: project3Image,
-    tags: ["React Native", "OpenWeather API", "Redux", "Expo"],
+    tags: [
+      "Next js",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
     liveUrl: "#",
     githubUrl: "#",
   },
